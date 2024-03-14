@@ -4,7 +4,7 @@ window.onload = () => {
 
 class Game {
     // bat starting position
-    startingGap = 160;
+    startingGap = 180;
     startingPosX = 30;
     startingPosY = 240;
 
@@ -44,7 +44,7 @@ class Game {
     startGame = () => {
         const fps = 60;
         setInterval(this.updateGame, 1000 / 60);
-
+        
         this.addPipe();      
     }
 
@@ -185,7 +185,7 @@ class Game {
     }
 
     moveUp = () => {
-        this.posY -= 50;
+        this.posY -= 30;
 
         this.bat.src = "images/bat2.png";
         setTimeout( () => { this.bat.src = "images/bat1.png" },100);
