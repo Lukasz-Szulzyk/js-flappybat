@@ -188,7 +188,7 @@ class Game {
     }
 
     moveUp = () => {
-        this.posY -= 30;
+        this.posY -= 35;
 
         this.bat.src = "images/bat2.png";
         setTimeout( () => { this.bat.src = "images/bat1.png" },100);
