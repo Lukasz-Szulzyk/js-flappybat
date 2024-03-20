@@ -28,9 +28,12 @@ class Game {
 
         this.pipeTop = new Image();
         this.pipeTop.src = "images/pipeTop.png";
+        this.pipeTop.height = 381;
+        this.pipeTop.width = 46;
 
         this.pipeBottom = new Image();
         this.pipeBottom.src = "images/pipeBottom.png";
+        this.pipeBottom.width = 46;
 
         document.addEventListener("click", this.moveUp);
         document.addEventListener("keydown", (e) => {
@@ -45,7 +48,7 @@ class Game {
         const fps = 60;
         setInterval(this.updateGame, 1000 / 60);
         
-        this.addPipe();      
+        this.addPipe();   
     }
 
     addPipe = () => {
@@ -58,7 +61,7 @@ class Game {
                 img: this.pipeTop,
                 x: x,
                 y: y,
-                width: this. pipeTop.width,
+                width: this.pipeTop.width,
                 height: this.pipeTop.height
             },
             bottom: {
